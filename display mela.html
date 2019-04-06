@@ -1,0 +1,47 @@
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</head>
+
+<body>
+
+    <p>Results</p>
+    <div id="list"><p><iframe src="results.txt" frameborder=0 height=8% ></iframe></p></div>
+	
+	<div class="row">
+		<div class="column">
+			<img src="I.jpg" alt="Trulli" style="width:100%">
+			<figcaption>Fig.1 - Input Image</figcaption>
+		</div>
+		<div class="column">
+			<img src="Y.jpg" alt="Binary" style="width:100%">
+			<figcaption>Fig.2 - Binary object shape</figcaption>
+		</div>
+		<div class="column">
+			<img src="B.jpg" alt="Outline" style="width:100%">	
+			<figcaption>Fig.3 - Outline of lesion</figcaption>
+		</div>
+		<div class="column">
+			<img src="cropped.jpg" alt="Zoomed" style="width:100%">
+			<figcaption>Fig.4 - Cropped and zoomed</figcaption>
+
+		</div>
+	</div>
+
+</body>
